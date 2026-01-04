@@ -1,4 +1,4 @@
-use libactionkv::DBKV;
+use dbkv::DBKV;
 
 #[cfg(target_os = "windows")]
 const USAGE: &str = "

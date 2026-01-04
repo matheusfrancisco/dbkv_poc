@@ -1,5 +1,5 @@
 [package]
-name = "actionkv"
+name = "dbkv"
 version = "0.1.0"
 edition = "2024"
 
@@ -10,9 +10,9 @@ serde = "1"
 serde_derive = "1"
 
 [lib]
-name = "libactionkv"
+name = "dbkv"
 path = "src/lib.rs"
  
 [[bin]]
-name = "akv_mem"
-path = "src/akv_mem.rs"
+name = "kv_mem"
+path = "src/kv_mem.rs"
