@@ -1,0 +1,18 @@
+[package]
+name = "actionkv"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+byteorder = "1.2"
+crc = "1.7"
+serde = "1"
+serde_derive = "1"
+
+[lib]
+name = "libactionkv"
+path = "src/lib.rs"
+ 
+[[bin]]
+name = "akv_mem"
+path = "src/akv_mem.rs"
