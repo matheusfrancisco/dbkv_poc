@@ -40,26 +40,26 @@ warning|:|src/lib.rs|:|117|:|117|:|32|:|60|:|using `SeekFrom::Current` to start 
 
 |:|none
 help|:|src/lib.rs|:|117|:|117|:|32|:|60|:|replace with|:|none|:|f.stream_position()
-warning|:|src/lib.rs|:|157|:|157|:|23|:|51|:|using `SeekFrom::Current` to start from current position|:|[0m[1m[33mwarning[0m[0m[1m: using `SeekFrom::Current` to start from current position[0m
-[0m   [0m[0m[1m[38;5;12m--> [0m[0msrc/lib.rs:157:23[0m
+warning|:|src/lib.rs|:|167|:|167|:|23|:|51|:|using `SeekFrom::Current` to start from current position|:|[0m[1m[33mwarning[0m[0m[1m: using `SeekFrom::Current` to start from current position[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0msrc/lib.rs:167:23[0m
 [0m    [0m[0m[1m[38;5;12m|[0m
-[0m[1m[38;5;12m157[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m            let pos = f.seek(SeekFrom::Current(0))?;[0m
+[0m[1m[38;5;12m167[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m            let pos = f.seek(SeekFrom::Current(0))?;[0m
 [0m    [0m[0m[1m[38;5;12m|[0m[0m                       [0m[0m[1m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[33mhelp: replace with: `f.stream_position()`[0m
 [0m    [0m[0m[1m[38;5;12m|[0m
 [0m    [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#seek_from_current[0m
 
 |:|none
-help|:|src/lib.rs|:|157|:|157|:|23|:|51|:|replace with|:|none|:|f.stream_position()
-warning|:|src/lib.rs|:|184|:|184|:|23|:|51|:|using `SeekFrom::Current` to start from current position|:|[0m[1m[33mwarning[0m[0m[1m: using `SeekFrom::Current` to start from current position[0m
-[0m   [0m[0m[1m[38;5;12m--> [0m[0msrc/lib.rs:184:23[0m
+help|:|src/lib.rs|:|167|:|167|:|23|:|51|:|replace with|:|none|:|f.stream_position()
+warning|:|src/lib.rs|:|194|:|194|:|23|:|51|:|using `SeekFrom::Current` to start from current position|:|[0m[1m[33mwarning[0m[0m[1m: using `SeekFrom::Current` to start from current position[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0msrc/lib.rs:194:23[0m
 [0m    [0m[0m[1m[38;5;12m|[0m
-[0m[1m[38;5;12m184[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m            let pos = f.seek(SeekFrom::Current(0))?;[0m
+[0m[1m[38;5;12m194[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m            let pos = f.seek(SeekFrom::Current(0))?;[0m
 [0m    [0m[0m[1m[38;5;12m|[0m[0m                       [0m[0m[1m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[33mhelp: replace with: `f.stream_position()`[0m
 [0m    [0m[0m[1m[38;5;12m|[0m
 [0m    [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#seek_from_current[0m
 
 |:|none
-help|:|src/lib.rs|:|184|:|184|:|23|:|51|:|replace with|:|none|:|f.stream_position()
+help|:|src/lib.rs|:|194|:|194|:|23|:|51|:|replace with|:|none|:|f.stream_position()
 warning|:|src/lib.rs|:|10|:|10|:|21|:|32|:|unused import: `OpenOptions`|:|[0m[1m[33mwarning[0m[0m[1m: unused import: `OpenOptions`[0m
 [0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/lib.rs:10:21[0m
 [0m   [0m[0m[1m[38;5;12m|[0m
@@ -102,36 +102,26 @@ warning|:|src/lib.rs|:|117|:|117|:|32|:|60|:|using `SeekFrom::Current` to start 
 
 |:|none
 help|:|src/lib.rs|:|117|:|117|:|32|:|60|:|replace with|:|none|:|f.stream_position()
-warning|:|src/lib.rs|:|157|:|157|:|23|:|51|:|using `SeekFrom::Current` to start from current position|:|[0m[1m[33mwarning[0m[0m[1m: using `SeekFrom::Current` to start from current position[0m
-[0m   [0m[0m[1m[38;5;12m--> [0m[0msrc/lib.rs:157:23[0m
+warning|:|src/lib.rs|:|167|:|167|:|23|:|51|:|using `SeekFrom::Current` to start from current position|:|[0m[1m[33mwarning[0m[0m[1m: using `SeekFrom::Current` to start from current position[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0msrc/lib.rs:167:23[0m
 [0m    [0m[0m[1m[38;5;12m|[0m
-[0m[1m[38;5;12m157[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m            let pos = f.seek(SeekFrom::Current(0))?;[0m
+[0m[1m[38;5;12m167[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m            let pos = f.seek(SeekFrom::Current(0))?;[0m
 [0m    [0m[0m[1m[38;5;12m|[0m[0m                       [0m[0m[1m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[33mhelp: replace with: `f.stream_position()`[0m
 [0m    [0m[0m[1m[38;5;12m|[0m
 [0m    [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#seek_from_current[0m
 
 |:|none
-help|:|src/lib.rs|:|157|:|157|:|23|:|51|:|replace with|:|none|:|f.stream_position()
-warning|:|src/lib.rs|:|184|:|184|:|23|:|51|:|using `SeekFrom::Current` to start from current position|:|[0m[1m[33mwarning[0m[0m[1m: using `SeekFrom::Current` to start from current position[0m
-[0m   [0m[0m[1m[38;5;12m--> [0m[0msrc/lib.rs:184:23[0m
+help|:|src/lib.rs|:|167|:|167|:|23|:|51|:|replace with|:|none|:|f.stream_position()
+warning|:|src/lib.rs|:|194|:|194|:|23|:|51|:|using `SeekFrom::Current` to start from current position|:|[0m[1m[33mwarning[0m[0m[1m: using `SeekFrom::Current` to start from current position[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0msrc/lib.rs:194:23[0m
 [0m    [0m[0m[1m[38;5;12m|[0m
-[0m[1m[38;5;12m184[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m            let pos = f.seek(SeekFrom::Current(0))?;[0m
+[0m[1m[38;5;12m194[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m            let pos = f.seek(SeekFrom::Current(0))?;[0m
 [0m    [0m[0m[1m[38;5;12m|[0m[0m                       [0m[0m[1m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[33mhelp: replace with: `f.stream_position()`[0m
 [0m    [0m[0m[1m[38;5;12m|[0m
 [0m    [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#seek_from_current[0m
 
 |:|none
-help|:|src/lib.rs|:|184|:|184|:|23|:|51|:|replace with|:|none|:|f.stream_position()
-warning|:|src/kv_mem.rs|:|51|:|51|:|17|:|22|:|unused variable: `value`|:|[0m[1m[33mwarning[0m[0m[1m: unused variable: `value`[0m
-[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/kv_mem.rs:51:17[0m
-[0m   [0m[0m[1m[38;5;12m|[0m
-[0m[1m[38;5;12m51[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m            let value = match store.get(key).unwrap() {[0m
-[0m   [0m[0m[1m[38;5;12m|[0m[0m                 [0m[0m[1m[33m^^^^^[0m[0m [0m[0m[1m[33mhelp: if this is intentional, prefix it with an underscore: `_value`[0m
-[0m   [0m[0m[1m[38;5;12m|[0m
-[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(unused_variables)]` on by default[0m
-
-|:|none
-help|:|src/kv_mem.rs|:|51|:|51|:|17|:|22|:|if this is intentional, prefix it with an underscore|:|none|:|_value
+help|:|src/lib.rs|:|194|:|194|:|23|:|51|:|replace with|:|none|:|f.stream_position()
 warning|:|src/kv_mem.rs|:|51|:|51|:|17|:|22|:|unused variable: `value`|:|[0m[1m[33mwarning[0m[0m[1m: unused variable: `value`[0m
 [0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/kv_mem.rs:51:17[0m
 [0m   [0m[0m[1m[38;5;12m|[0m
@@ -160,55 +150,6 @@ warning|:|src/kv_mem.rs|:|71|:|71|:|13|:|19|:|unneeded `return` statement|:|[0m
 |:|none
 help|:|src/kv_mem.rs|:|70|:|71|:|36|:|19|:|remove `return`|:|none|:|
 help|:|src/kv_mem.rs|:|71|:|71|:|19|:|20|:|remove `return`|:|none|:|
-warning|:|src/kv_mem.rs|:|71|:|71|:|13|:|19|:|unneeded `return` statement|:|[0m[1m[33mwarning[0m[0m[1m: unneeded `return` statement[0m
-[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/kv_mem.rs:71:13[0m
-[0m   [0m[0m[1m[38;5;12m|[0m
-[0m[1m[38;5;12m71[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m            return;[0m
-[0m   [0m[0m[1m[38;5;12m|[0m[0m             [0m[0m[1m[33m^^^^^^[0m
-[0m   [0m[0m[1m[38;5;12m|[0m
-[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return[0m
-[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(clippy::needless_return)]` on by default[0m
-[0m[1m[38;5;14mhelp[0m[0m: remove `return`[0m
-[0m   [0m[0m[1m[38;5;12m|[0m
-[0m[1m[38;5;12m70[0m[0m [0m[0m[38;5;9m- [0m[0m            eprintln!("{}", USAGE);[0m
-[0m[1m[38;5;12m71[0m[0m [0m[0m[38;5;9m-             return;[0m
-[0m[1m[38;5;12m70[0m[0m [0m[0m[38;5;10m+ [0m[0m            eprintln!("{}", USAGE);[0m
-[0m   [0m[0m[1m[38;5;12m|[0m
-
-|:|none
-help|:|src/kv_mem.rs|:|70|:|71|:|36|:|19|:|remove `return`|:|none|:|
-help|:|src/kv_mem.rs|:|71|:|71|:|19|:|20|:|remove `return`|:|none|:|
-warning|:|src/kv_mem.rs|:|36|:|36|:|36|:|42|:|this expression creates a reference which is immediately dereferenced by the compiler|:|[0m[1m[33mwarning[0m[0m[1m: this expression creates a reference which is immediately dereferenced by the compiler[0m
-[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/kv_mem.rs:36:36[0m
-[0m   [0m[0m[1m[38;5;12m|[0m
-[0m[1m[38;5;12m36[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    let fname = args.get(1).expect(&USAGE);[0m
-[0m   [0m[0m[1m[38;5;12m|[0m[0m                                    [0m[0m[1m[33m^^^^^^[0m[0m [0m[0m[1m[33mhelp: change this to: `USAGE`[0m
-[0m   [0m[0m[1m[38;5;12m|[0m
-[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_borrow[0m
-[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(clippy::needless_borrow)]` on by default[0m
-
-|:|none
-help|:|src/kv_mem.rs|:|36|:|36|:|36|:|42|:|change this to|:|none|:|USAGE
-warning|:|src/kv_mem.rs|:|37|:|37|:|37|:|43|:|this expression creates a reference which is immediately dereferenced by the compiler|:|[0m[1m[33mwarning[0m[0m[1m: this expression creates a reference which is immediately dereferenced by the compiler[0m
-[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/kv_mem.rs:37:37[0m
-[0m   [0m[0m[1m[38;5;12m|[0m
-[0m[1m[38;5;12m37[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    let action = args.get(2).expect(&USAGE).as_ref();[0m
-[0m   [0m[0m[1m[38;5;12m|[0m[0m                                     [0m[0m[1m[33m^^^^^^[0m[0m [0m[0m[1m[33mhelp: change this to: `USAGE`[0m
-[0m   [0m[0m[1m[38;5;12m|[0m
-[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_borrow[0m
-
-|:|none
-help|:|src/kv_mem.rs|:|37|:|37|:|37|:|43|:|change this to|:|none|:|USAGE
-warning|:|src/kv_mem.rs|:|38|:|38|:|34|:|40|:|this expression creates a reference which is immediately dereferenced by the compiler|:|[0m[1m[33mwarning[0m[0m[1m: this expression creates a reference which is immediately dereferenced by the compiler[0m
-[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/kv_mem.rs:38:34[0m
-[0m   [0m[0m[1m[38;5;12m|[0m
-[0m[1m[38;5;12m38[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    let key = args.get(3).expect(&USAGE).as_ref();[0m
-[0m   [0m[0m[1m[38;5;12m|[0m[0m                                  [0m[0m[1m[33m^^^^^^[0m[0m [0m[0m[1m[33mhelp: change this to: `USAGE`[0m
-[0m   [0m[0m[1m[38;5;12m|[0m
-[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_borrow[0m
-
-|:|none
-help|:|src/kv_mem.rs|:|38|:|38|:|34|:|40|:|change this to|:|none|:|USAGE
 warning|:|src/kv_mem.rs|:|36|:|36|:|36|:|42|:|this expression creates a reference which is immediately dereferenced by the compiler|:|[0m[1m[33mwarning[0m[0m[1m: this expression creates a reference which is immediately dereferenced by the compiler[0m
 [0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/kv_mem.rs:36:36[0m
 [0m   [0m[0m[1m[38;5;12m|[0m
@@ -273,6 +214,85 @@ help|:|src/kv_mem.rs|:|51|:|57|:|13|:|15|:|omit the `let` binding|:|none|:|match
                 }
                 Some(v) => println!("{:?}", v),
             };
+warning|:|src/kv_mem.rs|:|61|:|61|:|44|:|50|:|this expression creates a reference which is immediately dereferenced by the compiler|:|[0m[1m[33mwarning[0m[0m[1m: this expression creates a reference which is immediately dereferenced by the compiler[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/kv_mem.rs:61:44[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m61[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m            let value = maybe_value.expect(&USAGE).as_ref();[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m                                            [0m[0m[1m[33m^^^^^^[0m[0m [0m[0m[1m[33mhelp: change this to: `USAGE`[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_borrow[0m
+
+|:|none
+help|:|src/kv_mem.rs|:|61|:|61|:|44|:|50|:|change this to|:|none|:|USAGE
+warning|:|src/kv_mem.rs|:|66|:|66|:|44|:|50|:|this expression creates a reference which is immediately dereferenced by the compiler|:|[0m[1m[33mwarning[0m[0m[1m: this expression creates a reference which is immediately dereferenced by the compiler[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/kv_mem.rs:66:44[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m66[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m            let value = maybe_value.expect(&USAGE).as_ref();[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m                                            [0m[0m[1m[33m^^^^^^[0m[0m [0m[0m[1m[33mhelp: change this to: `USAGE`[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_borrow[0m
+
+|:|none
+help|:|src/kv_mem.rs|:|66|:|66|:|44|:|50|:|change this to|:|none|:|USAGE
+warning|:|src/kv_mem.rs|:|51|:|51|:|17|:|22|:|unused variable: `value`|:|[0m[1m[33mwarning[0m[0m[1m: unused variable: `value`[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/kv_mem.rs:51:17[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m51[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m            let value = match store.get(key).unwrap() {[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m                 [0m[0m[1m[33m^^^^^[0m[0m [0m[0m[1m[33mhelp: if this is intentional, prefix it with an underscore: `_value`[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(unused_variables)]` on by default[0m
+
+|:|none
+help|:|src/kv_mem.rs|:|51|:|51|:|17|:|22|:|if this is intentional, prefix it with an underscore|:|none|:|_value
+warning|:|src/kv_mem.rs|:|71|:|71|:|13|:|19|:|unneeded `return` statement|:|[0m[1m[33mwarning[0m[0m[1m: unneeded `return` statement[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/kv_mem.rs:71:13[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m71[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m            return;[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m             [0m[0m[1m[33m^^^^^^[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(clippy::needless_return)]` on by default[0m
+[0m[1m[38;5;14mhelp[0m[0m: remove `return`[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m70[0m[0m [0m[0m[38;5;9m- [0m[0m            eprintln!("{}", USAGE);[0m
+[0m[1m[38;5;12m71[0m[0m [0m[0m[38;5;9m-             return;[0m
+[0m[1m[38;5;12m70[0m[0m [0m[0m[38;5;10m+ [0m[0m            eprintln!("{}", USAGE);[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+
+|:|none
+help|:|src/kv_mem.rs|:|70|:|71|:|36|:|19|:|remove `return`|:|none|:|
+help|:|src/kv_mem.rs|:|71|:|71|:|19|:|20|:|remove `return`|:|none|:|
+warning|:|src/kv_mem.rs|:|36|:|36|:|36|:|42|:|this expression creates a reference which is immediately dereferenced by the compiler|:|[0m[1m[33mwarning[0m[0m[1m: this expression creates a reference which is immediately dereferenced by the compiler[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/kv_mem.rs:36:36[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m36[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    let fname = args.get(1).expect(&USAGE);[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m                                    [0m[0m[1m[33m^^^^^^[0m[0m [0m[0m[1m[33mhelp: change this to: `USAGE`[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_borrow[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(clippy::needless_borrow)]` on by default[0m
+
+|:|none
+help|:|src/kv_mem.rs|:|36|:|36|:|36|:|42|:|change this to|:|none|:|USAGE
+warning|:|src/kv_mem.rs|:|37|:|37|:|37|:|43|:|this expression creates a reference which is immediately dereferenced by the compiler|:|[0m[1m[33mwarning[0m[0m[1m: this expression creates a reference which is immediately dereferenced by the compiler[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/kv_mem.rs:37:37[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m37[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    let action = args.get(2).expect(&USAGE).as_ref();[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m                                     [0m[0m[1m[33m^^^^^^[0m[0m [0m[0m[1m[33mhelp: change this to: `USAGE`[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_borrow[0m
+
+|:|none
+help|:|src/kv_mem.rs|:|37|:|37|:|37|:|43|:|change this to|:|none|:|USAGE
+warning|:|src/kv_mem.rs|:|38|:|38|:|34|:|40|:|this expression creates a reference which is immediately dereferenced by the compiler|:|[0m[1m[33mwarning[0m[0m[1m: this expression creates a reference which is immediately dereferenced by the compiler[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/kv_mem.rs:38:34[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m38[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    let key = args.get(3).expect(&USAGE).as_ref();[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m                                  [0m[0m[1m[33m^^^^^^[0m[0m [0m[0m[1m[33mhelp: change this to: `USAGE`[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_borrow[0m
+
+|:|none
+help|:|src/kv_mem.rs|:|38|:|38|:|34|:|40|:|change this to|:|none|:|USAGE
 warning|:|src/kv_mem.rs|:|51|:|57|:|13|:|15|:|this let-binding has unit value|:|[0m[1m[33mwarning[0m[0m[1m: this let-binding has unit value[0m
 [0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/kv_mem.rs:51:13[0m
 [0m   [0m[0m[1m[38;5;12m|[0m
@@ -316,16 +336,6 @@ warning|:|src/kv_mem.rs|:|61|:|61|:|44|:|50|:|this expression creates a referenc
 
 |:|none
 help|:|src/kv_mem.rs|:|61|:|61|:|44|:|50|:|change this to|:|none|:|USAGE
-warning|:|src/kv_mem.rs|:|61|:|61|:|44|:|50|:|this expression creates a reference which is immediately dereferenced by the compiler|:|[0m[1m[33mwarning[0m[0m[1m: this expression creates a reference which is immediately dereferenced by the compiler[0m
-[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/kv_mem.rs:61:44[0m
-[0m   [0m[0m[1m[38;5;12m|[0m
-[0m[1m[38;5;12m61[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m            let value = maybe_value.expect(&USAGE).as_ref();[0m
-[0m   [0m[0m[1m[38;5;12m|[0m[0m                                            [0m[0m[1m[33m^^^^^^[0m[0m [0m[0m[1m[33mhelp: change this to: `USAGE`[0m
-[0m   [0m[0m[1m[38;5;12m|[0m
-[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_borrow[0m
-
-|:|none
-help|:|src/kv_mem.rs|:|61|:|61|:|44|:|50|:|change this to|:|none|:|USAGE
 warning|:|src/kv_mem.rs|:|66|:|66|:|44|:|50|:|this expression creates a reference which is immediately dereferenced by the compiler|:|[0m[1m[33mwarning[0m[0m[1m: this expression creates a reference which is immediately dereferenced by the compiler[0m
 [0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/kv_mem.rs:66:44[0m
 [0m   [0m[0m[1m[38;5;12m|[0m
@@ -336,13 +346,161 @@ warning|:|src/kv_mem.rs|:|66|:|66|:|44|:|50|:|this expression creates a referenc
 
 |:|none
 help|:|src/kv_mem.rs|:|66|:|66|:|44|:|50|:|change this to|:|none|:|USAGE
-warning|:|src/kv_mem.rs|:|66|:|66|:|44|:|50|:|this expression creates a reference which is immediately dereferenced by the compiler|:|[0m[1m[33mwarning[0m[0m[1m: this expression creates a reference which is immediately dereferenced by the compiler[0m
-[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/kv_mem.rs:66:44[0m
+warning|:|src/diskkv_mem.rs|:|81|:|81|:|13|:|19|:|unneeded `return` statement|:|[0m[1m[33mwarning[0m[0m[1m: unneeded `return` statement[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/diskkv_mem.rs:81:13[0m
 [0m   [0m[0m[1m[38;5;12m|[0m
-[0m[1m[38;5;12m66[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m            let value = maybe_value.expect(&USAGE).as_ref();[0m
+[0m[1m[38;5;12m81[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m            return;[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m             [0m[0m[1m[33m^^^^^^[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(clippy::needless_return)]` on by default[0m
+[0m[1m[38;5;14mhelp[0m[0m: remove `return`[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m80[0m[0m [0m[0m[38;5;9m- [0m[0m            eprintln!("{}", USAGE);[0m
+[0m[1m[38;5;12m81[0m[0m [0m[0m[38;5;9m-             return;[0m
+[0m[1m[38;5;12m80[0m[0m [0m[0m[38;5;10m+ [0m[0m            eprintln!("{}", USAGE);[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+
+|:|none
+help|:|src/diskkv_mem.rs|:|80|:|81|:|36|:|19|:|remove `return`|:|none|:|
+help|:|src/diskkv_mem.rs|:|81|:|81|:|19|:|20|:|remove `return`|:|none|:|
+warning|:|src/diskkv_mem.rs|:|40|:|40|:|36|:|42|:|this expression creates a reference which is immediately dereferenced by the compiler|:|[0m[1m[33mwarning[0m[0m[1m: this expression creates a reference which is immediately dereferenced by the compiler[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/diskkv_mem.rs:40:36[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m40[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    let fname = args.get(1).expect(&USAGE);[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m                                    [0m[0m[1m[33m^^^^^^[0m[0m [0m[0m[1m[33mhelp: change this to: `USAGE`[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_borrow[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(clippy::needless_borrow)]` on by default[0m
+
+|:|none
+help|:|src/diskkv_mem.rs|:|40|:|40|:|36|:|42|:|change this to|:|none|:|USAGE
+warning|:|src/diskkv_mem.rs|:|41|:|41|:|37|:|43|:|this expression creates a reference which is immediately dereferenced by the compiler|:|[0m[1m[33mwarning[0m[0m[1m: this expression creates a reference which is immediately dereferenced by the compiler[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/diskkv_mem.rs:41:37[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m41[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    let action = args.get(2).expect(&USAGE).as_ref();[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m                                     [0m[0m[1m[33m^^^^^^[0m[0m [0m[0m[1m[33mhelp: change this to: `USAGE`[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_borrow[0m
+
+|:|none
+help|:|src/diskkv_mem.rs|:|41|:|41|:|37|:|43|:|change this to|:|none|:|USAGE
+warning|:|src/diskkv_mem.rs|:|42|:|42|:|34|:|40|:|this expression creates a reference which is immediately dereferenced by the compiler|:|[0m[1m[33mwarning[0m[0m[1m: this expression creates a reference which is immediately dereferenced by the compiler[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/diskkv_mem.rs:42:34[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m42[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    let key = args.get(3).expect(&USAGE).as_ref();[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m                                  [0m[0m[1m[33m^^^^^^[0m[0m [0m[0m[1m[33mhelp: change this to: `USAGE`[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_borrow[0m
+
+|:|none
+help|:|src/diskkv_mem.rs|:|42|:|42|:|34|:|40|:|change this to|:|none|:|USAGE
+warning|:|src/diskkv_mem.rs|:|55|:|55|:|49|:|59|:|this expression creates a reference which is immediately dereferenced by the compiler|:|[0m[1m[33mwarning[0m[0m[1m: this expression creates a reference which is immediately dereferenced by the compiler[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/diskkv_mem.rs:55:49[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m55[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m            let index_as_bytes = store.get_disk(&INDEX_KEY).unwrap().unwrap();[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m                                                 [0m[0m[1m[33m^^^^^^^^^^[0m[0m [0m[0m[1m[33mhelp: change this to: `INDEX_KEY`[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_borrow[0m
+
+|:|none
+help|:|src/diskkv_mem.rs|:|55|:|55|:|49|:|59|:|change this to|:|none|:|INDEX_KEY
+warning|:|src/diskkv_mem.rs|:|69|:|69|:|44|:|50|:|this expression creates a reference which is immediately dereferenced by the compiler|:|[0m[1m[33mwarning[0m[0m[1m: this expression creates a reference which is immediately dereferenced by the compiler[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/diskkv_mem.rs:69:44[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m69[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m            let value = maybe_value.expect(&USAGE).as_ref();[0m
 [0m   [0m[0m[1m[38;5;12m|[0m[0m                                            [0m[0m[1m[33m^^^^^^[0m[0m [0m[0m[1m[33mhelp: change this to: `USAGE`[0m
 [0m   [0m[0m[1m[38;5;12m|[0m
 [0m   [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_borrow[0m
 
 |:|none
-help|:|src/kv_mem.rs|:|66|:|66|:|44|:|50|:|change this to|:|none|:|USAGE
+help|:|src/diskkv_mem.rs|:|69|:|69|:|44|:|50|:|change this to|:|none|:|USAGE
+warning|:|src/diskkv_mem.rs|:|75|:|75|:|44|:|50|:|this expression creates a reference which is immediately dereferenced by the compiler|:|[0m[1m[33mwarning[0m[0m[1m: this expression creates a reference which is immediately dereferenced by the compiler[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/diskkv_mem.rs:75:44[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m75[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m            let value = maybe_value.expect(&USAGE).as_ref();[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m                                            [0m[0m[1m[33m^^^^^^[0m[0m [0m[0m[1m[33mhelp: change this to: `USAGE`[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_borrow[0m
+
+|:|none
+help|:|src/diskkv_mem.rs|:|75|:|75|:|44|:|50|:|change this to|:|none|:|USAGE
+warning|:|src/diskkv_mem.rs|:|81|:|81|:|13|:|19|:|unneeded `return` statement|:|[0m[1m[33mwarning[0m[0m[1m: unneeded `return` statement[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/diskkv_mem.rs:81:13[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m81[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m            return;[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m             [0m[0m[1m[33m^^^^^^[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_return[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(clippy::needless_return)]` on by default[0m
+[0m[1m[38;5;14mhelp[0m[0m: remove `return`[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m80[0m[0m [0m[0m[38;5;9m- [0m[0m            eprintln!("{}", USAGE);[0m
+[0m[1m[38;5;12m81[0m[0m [0m[0m[38;5;9m-             return;[0m
+[0m[1m[38;5;12m80[0m[0m [0m[0m[38;5;10m+ [0m[0m            eprintln!("{}", USAGE);[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+
+|:|none
+help|:|src/diskkv_mem.rs|:|80|:|81|:|36|:|19|:|remove `return`|:|none|:|
+help|:|src/diskkv_mem.rs|:|81|:|81|:|19|:|20|:|remove `return`|:|none|:|
+warning|:|src/diskkv_mem.rs|:|40|:|40|:|36|:|42|:|this expression creates a reference which is immediately dereferenced by the compiler|:|[0m[1m[33mwarning[0m[0m[1m: this expression creates a reference which is immediately dereferenced by the compiler[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/diskkv_mem.rs:40:36[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m40[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    let fname = args.get(1).expect(&USAGE);[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m                                    [0m[0m[1m[33m^^^^^^[0m[0m [0m[0m[1m[33mhelp: change this to: `USAGE`[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_borrow[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(clippy::needless_borrow)]` on by default[0m
+
+|:|none
+help|:|src/diskkv_mem.rs|:|40|:|40|:|36|:|42|:|change this to|:|none|:|USAGE
+warning|:|src/diskkv_mem.rs|:|41|:|41|:|37|:|43|:|this expression creates a reference which is immediately dereferenced by the compiler|:|[0m[1m[33mwarning[0m[0m[1m: this expression creates a reference which is immediately dereferenced by the compiler[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/diskkv_mem.rs:41:37[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m41[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    let action = args.get(2).expect(&USAGE).as_ref();[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m                                     [0m[0m[1m[33m^^^^^^[0m[0m [0m[0m[1m[33mhelp: change this to: `USAGE`[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_borrow[0m
+
+|:|none
+help|:|src/diskkv_mem.rs|:|41|:|41|:|37|:|43|:|change this to|:|none|:|USAGE
+warning|:|src/diskkv_mem.rs|:|42|:|42|:|34|:|40|:|this expression creates a reference which is immediately dereferenced by the compiler|:|[0m[1m[33mwarning[0m[0m[1m: this expression creates a reference which is immediately dereferenced by the compiler[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/diskkv_mem.rs:42:34[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m42[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    let key = args.get(3).expect(&USAGE).as_ref();[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m                                  [0m[0m[1m[33m^^^^^^[0m[0m [0m[0m[1m[33mhelp: change this to: `USAGE`[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_borrow[0m
+
+|:|none
+help|:|src/diskkv_mem.rs|:|42|:|42|:|34|:|40|:|change this to|:|none|:|USAGE
+warning|:|src/diskkv_mem.rs|:|55|:|55|:|49|:|59|:|this expression creates a reference which is immediately dereferenced by the compiler|:|[0m[1m[33mwarning[0m[0m[1m: this expression creates a reference which is immediately dereferenced by the compiler[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/diskkv_mem.rs:55:49[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m55[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m            let index_as_bytes = store.get_disk(&INDEX_KEY).unwrap().unwrap();[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m                                                 [0m[0m[1m[33m^^^^^^^^^^[0m[0m [0m[0m[1m[33mhelp: change this to: `INDEX_KEY`[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_borrow[0m
+
+|:|none
+help|:|src/diskkv_mem.rs|:|55|:|55|:|49|:|59|:|change this to|:|none|:|INDEX_KEY
+warning|:|src/diskkv_mem.rs|:|69|:|69|:|44|:|50|:|this expression creates a reference which is immediately dereferenced by the compiler|:|[0m[1m[33mwarning[0m[0m[1m: this expression creates a reference which is immediately dereferenced by the compiler[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/diskkv_mem.rs:69:44[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m69[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m            let value = maybe_value.expect(&USAGE).as_ref();[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m                                            [0m[0m[1m[33m^^^^^^[0m[0m [0m[0m[1m[33mhelp: change this to: `USAGE`[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_borrow[0m
+
+|:|none
+help|:|src/diskkv_mem.rs|:|69|:|69|:|44|:|50|:|change this to|:|none|:|USAGE
+warning|:|src/diskkv_mem.rs|:|75|:|75|:|44|:|50|:|this expression creates a reference which is immediately dereferenced by the compiler|:|[0m[1m[33mwarning[0m[0m[1m: this expression creates a reference which is immediately dereferenced by the compiler[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/diskkv_mem.rs:75:44[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m75[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m            let value = maybe_value.expect(&USAGE).as_ref();[0m
+[0m   [0m[0m[1m[38;5;12m|[0m[0m                                            [0m[0m[1m[33m^^^^^^[0m[0m [0m[0m[1m[33mhelp: change this to: `USAGE`[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#needless_borrow[0m
+
+|:|none
+help|:|src/diskkv_mem.rs|:|75|:|75|:|44|:|50|:|change this to|:|none|:|USAGE

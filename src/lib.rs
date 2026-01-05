@@ -133,6 +133,16 @@ impl DBKV {
         self.insert(key, b"")
     }
 
+    pub fn get_disk(&mut self, key: &ByteStr) -> io::Result<Option<ByteString>> {
+        let position = match self.index.get(key) {
+            None => return Ok(None),
+            Some(pos) => *pos,
+        };
+
+        let kv = self.get_at(position)?;
+        Ok(Some(kv.value))
+    }
+
     pub fn get(&mut self, key: &ByteStr) -> io::Result<Option<KeyValeuPair>> {
         match self.index.get(key) {
             Some(&position) => {

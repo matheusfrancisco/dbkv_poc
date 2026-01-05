@@ -5,6 +5,7 @@ edition = "2024"
 
 [dependencies]
 byteorder = "1.2"
+bincode = "1"
 crc = "1.7"
 serde = "1"
 serde_derive = "1"
@@ -16,3 +17,7 @@ path = "src/lib.rs"
 [[bin]]
 name = "kv_mem"
 path = "src/kv_mem.rs"
+
+[[bin]]
+name = "diskkv"
+path = "src/diskkv_mem.rs"
